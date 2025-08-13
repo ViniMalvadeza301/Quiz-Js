@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/jsPhoto.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 8rem;
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: clamp(50%,70%);
+    gap: 1rem;
+    border-radius: 12px;
+}
+
+input {
+    padding: 0.5rem;
+    border: none;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: yellow;
+    border: none;
+    border-radius: 12px;
+    transition: all ease 1s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
