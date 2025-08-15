@@ -1,13 +1,29 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1e1e1e;
-    color: #f7df1e; /* Amarelo JS */
+    color: #f7df1e;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* empilha verticalmente */
+    justify-content: center; /* centra o container */
     align-items: center;
     height: 100vh;
     margin: 0;
 }
+
+.voltar {
+    margin-top: 1rem;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1e1e1e;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
 
 #container {
     text-align: center;
@@ -47,6 +63,8 @@ h1 {
     font-style: italic;
     color: #fffacd;
 }
+
+
 
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
